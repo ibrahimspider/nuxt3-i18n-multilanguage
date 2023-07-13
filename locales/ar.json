@@ -1,4 +1,6 @@
 {
-  "hello": "مرحبا, {name}!",
-  "language": "Language"
+  "home_title": "الرئيسية",
+  "home_btn": "الذهاب للرئيسية",
+  "about_title": "حول",
+  "about_btn": "الذهاب الي حول"
 }

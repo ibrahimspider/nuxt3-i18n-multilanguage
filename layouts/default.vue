@@ -1,25 +1,33 @@
 <template>
   <div>
-    <div>
-      <form>
-        <label for="locale-select">{{ $t("language") }}: </label>
-        <select id="locale-select" v-model="$i18n.locale">
-          <option value="en">EN</option>
-          <option value="ar">AR</option>
-        </select>
-      </form>
-    </div>
     <slot />
+    <LangSwitcher style="padding-top: 90px" />
   </div>
 </template>
+
+<script setup></script>
 <style>
-form {
-  position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
-  top: 20px;
-  left: 10px;
+body {
+  background-color: #f0f0f0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: sans-serif;
 }
-select {
-    padding: 5px;
+
+a,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 10px;
+  background-color: cadetblue;
+  border-radius: 5px;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 50px;
+}
+a:hover {
+  background-color: rgb(23, 61, 62);
 }
 </style>
